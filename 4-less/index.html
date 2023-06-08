@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4-less</title>
+  </head>
+  <body>
+    <p><b>Все ответы в этом задании были не правильными</b></p>
+    <pre>
+        "" + 1 + 0 = "10" // (1)
+        "" - 1 + 0 = -1 // (2)
+        true + false = 1
+        6 / "3" = 2
+        "2" * "3" = 6
+        4 + 5 + "px" = "9px"
+        "$" + 4 + 5 = "$45"
+        "4" - 2 = 2
+        "4px" - 2 = NaN
+        "  -9  " + 5 = "  -9  5" // (3)
+        "  -9  " - 5 = -14 // (4)
+        null + 1 = 1 // (5)
+        undefined + 1 = NaN // (6)
+        " \t \n" - 2 = -2 // (7)
+    </pre>
+
+    <p>С префиксами все было правильно</p>
+    <script>
+      let a = +prompt(
+        "Первое число?",
+        100000000000000000000000000000000000000000000000000000000
+      );
+      let b = +prompt(
+        "Второе число?",
+        200000000000000000000000000000000000000000000000000000000
+      );
+      alert("Ответ в консоли");
+
+      console.log(a + b);
+    </script>
+  </body>
+</html>

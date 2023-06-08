@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        max-width: 1000px;
+        margin: 100px auto;
+        font-family: monospace;
+        font-size: 20px;
+        line-height: 40px;
+      }
+    </style>
+    <title>Base 1 Work</title>
+  </head>
+  <body>
+    <p class="Tag"></p>
+    <script>
+      let userName = prompt("Как тебя зовут?");
+      let planetName = prompt("На какой планете ты находишься?");
+
+      let admin = userName;
+      const pTag = document.querySelector("p");
+
+      alert(`Это admin переменная ${admin}`);
+      HTML = ` ${admin} это имя пользователя то есть твое имя. А это UserName переменная которая в себе это хранит. Ты должен быть ей благодарен ведь без нее это все не сработало. ${planetName} это твоя планета. Это ее переменная: planetName Все я устал `;
+
+      pTag.innerHTML = HTML;
+    </script>
+  </body>
+</html>
